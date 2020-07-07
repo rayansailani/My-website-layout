@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+
+        .header {
+            padding: 30px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+
+        }
+
+        .topnav a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 12px 16px;
+            color: white;
+            text-align: center;
+        }
+
+        .topnav a:hover {
+            background-color: #f2f2f2;
+            color: black;
+        }
+
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .row:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #ddd;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width:800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                padding: 0;
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                display: block;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<div class="header">
+    <h1>My Website</h1>
+    <p>This is my complete website layout</p>
+</div>
+<div class="topnav">
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#" style="float:right">Link</a>
+</div>
+<div class="row">
+    <div class="leftcolumn">
+        <div class="card">
+            <h2>Title Heading</h2>
+            <h5>Title desrciption July,7,2020</h5>
+            <p>some text</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad beatae nisi, doloremque voluptas eos impedit
+                aliquid? Molestiae, nesciunt enim explicabo aperiam pariatur, nam qui natus perferendis veniam
+                laudantium quo magnam!</p>
+        </div>
+        <div class="card">
+            <h2>Title Heading</h2>
+            <h5>Title desrciption July,7,2020</h5>
+            <p>some text</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad beatae nisi, doloremque voluptas eos impedit
+                aliquid? Molestiae, nesciunt enim explicabo aperiam pariatur, nam qui natus perferendis veniam
+                laudantium quo magnam!</p>
+        </div>
+    </div>
+    <div class="rightcolumn">
+        <div class="card">
+            <h2>Rayan Sailani</h2>
+            <div class="fakeimg" style="height: 100px;">
+                image</div>
+            <p>sometext</p>
+        </div>
+        <div class="card">
+            <h3>Popular post</h3>
+            <div class="fakeimg">image</div>
+            <div class="fakeimg">image</div>
+            <div class="fakeimg">image</div>
+        </div>
+        <div class="card">
+            <h3>Follow me</h3>
+            <p>Some Text</p>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <h2>Footer</h2>
+</div>
+
+</html>
